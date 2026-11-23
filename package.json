@@ -1,0 +1,10 @@
+﻿{
+  "name": "princess-coffee-lessons",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Traditional Chinese coffee Wiki and offline teaching slides",
+  "scripts": {
+    "build": "node scripts/build-slides.js",
+    "test": "node scripts/check-slides.js"
+  }
+}

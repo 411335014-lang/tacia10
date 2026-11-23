@@ -1,0 +1,12 @@
+﻿Thumbs.db
+Desktop.ini
+*.tmp
+*.log
+.transfer-temp/
+node_modules/
+.env
+.env.*
+!.env.example
+*.zip
+
+*.bundle
