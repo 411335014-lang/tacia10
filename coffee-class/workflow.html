@@ -1,0 +1,12 @@
+<!doctype html><html lang="zh-Hant"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>workflow</title><style>body{max-width:940px;margin:40px auto;padding:0 24px 60px;background:#faf5eb;color:#49342d;font:18px/1.8 "Microsoft JhengHei",sans-serif}a{color:#745184}h1{line-height:1.35}table{width:100%;border-collapse:collapse;display:block;overflow:auto}td{border:1px solid #ded3c7;padding:10px}pre{overflow:auto;background:#e9e0f1;padding:18px}code{font-size:14px}svg{max-width:100%;height:auto}</style><body><nav><a href="index.html">返回教學簡報</a></nav><h1>簡報製作 graph 與本次執行</h1><p><img alt="製作流程" src="workflow.svg" style="max-width:100%;height:auto"></p><pre><code>flowchart TD
+ A[取得資料與查詢 Wiki] --&gt; B[整理重點與規劃大綱]
+ B --&gt; C{檢查大綱}
+ C --&gt;|需調整| B
+ C --&gt;|通過| D{使用者確認}
+ D --&gt;|修改| B
+ D --&gt;|確認| E[製作 HTML]
+ E --&gt; F{檢查內容與功能}
+ F --&gt;|內容或互動問題| E
+ F --&gt;|結構問題| B
+ F --&gt;|已完成可執行檢查| G[交付與 Git 記錄]
+</code></pre><h2>重複與重新生成</h2><p>- Ingest：逐篇讀取、整理摘要、更新主題頁、檢查、使用者審閱。</p><p>- 大綱 loop：缺漏、重複、難度不適合時回到整理重點；大綱變更重新確認。</p><p>- 成品 loop：來源、參數、連結與互動有問題時回製作，重查受影響項目。</p><p>- 瀏覽器政策阻擋的檢查列為未完成，不以其他測試冒充通過。</p><h2>為什麼這樣設計</h2><p>先固定教學範圍與來源，減少投影片做好才發現重複；檢查節點記錄問題、修正及重查結果，使流程可回溯。</p><h2>本輪紀錄</h2><p>沿用已確認 A 順序與 18 頁大綱，重新建置與測試。詳見 <a href="checks/graph-rerun-2026-11-23.html">實際執行報告</a>。</p></body></html>
